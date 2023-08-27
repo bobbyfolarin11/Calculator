@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        45deg,   
+        hsl(0deg 0% 0%) 0%,
+        hsl(344deg 0% 3%) 10%,
+        hsl(344deg 0% 5%) 20%,
+        hsl(344deg 0% 7%) 30%,
+        hsl(344deg 0% 9%) 40%,
+        hsl(0, 0%, 10%) 50%,
+        hsl(344deg 0% 10%) 60%,
+        hsl(344deg 0% 10%) 70%,
+        hsl(344deg 0% 9%) 80%,
+        hsl(344deg 0% 9%) 90%,
+        hsl(0deg 0% 9%) 100%
+    );
+    height: 100vh;
+    margin: 40px;
+}
+
+.container {
+    background-color: rgba(50, 50, 50, 0.047);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .8);
+    padding: 40px;
+    border-radius: 36px;
+}
+
+.fa-moon {
+    font-size: 22px;
+    cursor: pointer;
+    color: #c2c1c1;
+}
+
+.flex-end {
+    align-self: flex-end;
+}
+
+#total {
+    font-size: 55px;
+    color: #fff;
+    font-weight: 500;
+    margin-block: 25px 5px;
+}
+
+#user-input {
+    font-size: 20px;
+    color: white;
+    border: none;
+    height: 25px;
+    outline: none;
+    background: transparent;
+    text-align: end;
+} 
+
+.calculator {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 70px;
+    row-gap: 15px;
+}
+
+.btn-item {
+    width: 75px;
+    height: 70px;
+    font-size: 25px;
+    color: rgba(4, 0, 251, 0.965);
+    background-color: rgba(95, 95, 95, 0.1);
+    border-radius: 16px;
+    box-shadow: 8px 10px 7px rgba(0, 0, 0, .7);
+    border: none;
+} 
+
+@media only screen and (max-width: 481px) {
+    .calculator {
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        column-gap: 5px;
+    }
+
+    .btn-item {
+        width: 55px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+.calculator .scientific-btn {
+    height: 50px;
+    font-size: 20px;
+}
+
+.calculator .grey-btn {
+    background-color: rgba(164, 164, 164, 0.683);
+    color: #fff;
+}
+
+.operator {
+    background-color: hsla(215, 74%, 51%, 0.864);
+    
+}
+button.addition {
+    grid-row-start: 4;
+    grid-column-start: 4;
+    height: 105px;
+    grid-row-end: 6;
+    grid-column-end: 5;
+}
+
+button#calculate {
+    grid-row-start: 5;
+    grid-column-start: 4;
+    height: 105px;
+    grid-row-end: 7;
+    grid-column-end: 5;
+    margin-top: 50px;
+}
+
+.btn-item:hover {
+    opacity: .6;
+}
