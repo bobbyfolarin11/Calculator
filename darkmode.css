@@ -79,6 +79,14 @@ body {
     border: none;
 } 
 
+button#calculate {
+    grid-row-start: 5;
+    grid-column-start: 4;
+    height: 105px;
+    grid-row-end: 7;
+    grid-column-end: 5;
+    margin-top: 50px;
+}
 @media only screen and (max-width: 481px) {
     .calculator {
         /* grid-template-columns: 1fr 1fr 1fr 1fr; */
@@ -90,6 +98,15 @@ body {
         height: 50px;
         font-size: 18px;
     }
+    button#calculate {
+        grid-row-start: 5;
+        grid-column-start: 4;
+        height: 65px;
+        grid-row-end: 7;
+        grid-column-end: 5;
+        margin-top: 50px;
+    }
+    
 }
 
 .calculator .scientific-btn {
@@ -114,14 +131,6 @@ button.addition {
     grid-column-end: 5;
 }
 
-button#calculate {
-    grid-row-start: 5;
-    grid-column-start: 4;
-    height: 105px;
-    grid-row-end: 7;
-    grid-column-end: 5;
-    margin-top: 50px;
-}
 
 .btn-item:hover {
     opacity: .6;
