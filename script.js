@@ -107,10 +107,10 @@ btnEl.forEach((button) => {
       totalCalc.textContent = userInput;
     } else if (currentInput == "√") {
       userInput = Math.sqrt(eval(userInput));
-      totalCalc.textContent = userInput;
+      totalCalc.textContent = formatResult(userInput);
     } else if (currentInput == "log<sub>10</sub>") {
       userInput = Math.log10(eval(userInput));
-      totalCalc.textContent = userInput;
+      totalCalc.textContent = formatResult(userInput);
     } else if (currentInput === "=") {
       if (userInput.includes("^")) {
         const [base, exponent] = userInput.split("^");
@@ -164,7 +164,7 @@ document.addEventListener("keydown", (event) => {
 
 function formatResult(result) {
   if (result.toString().length > 10) {
-    return result.toExponential(5);
+    return result.toExponential(3);
   } else {
     return result;
   }
