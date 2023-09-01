@@ -19,7 +19,7 @@ body {
         hsl(344deg 0% 9%) 90%,
         hsl(0deg 0% 9%) 100%
     );
-    height: 100vh;
+/*     height: 100vh; */
     margin: 40px;
 }
 
